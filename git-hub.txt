@@ -1,75 +1,144 @@
-entro na pasta ads
+========================================
+GIT / GITHUB - GUIA RÁPIDO
+========================================
+
+
+1. ENTRAR NA PASTA DO PROJETO
+----------------------------------------
+
+Entrar na pasta Desktop:
+
 cd Desktop
+
+Entrar na pasta do projeto:
+
 cd ads
-ou
+
+OU, diretamente:
+
 cd Desktop/ads
 
-git init - para iniciar o projeto dentro do do GitHub
-Mas na seugnda vez não é necessário pois já criei meu projeto dentro do GitHub
 
-git remote add origin e o seu https - use o https não ssh por enquanto
+========================================
+2. CONFIGURAR MEU USUÁRIO DO GIT
+========================================
 
-git status para entender o que está acontecendo
+Adicionar minhas variáveis no PC para validar meu acesso dentro do GitHub:
 
-git add . - para preparar os arquivos se você usar apenas "add ." fará com todos da pasta
-
-"git add ip/" se fosse para uma só pasta
-
-git switch -  para trocar a branch
-
-Adicionando minhas variáveis no pc para validar meu acesso dentro do GitHub
 git config --global user.email "carlosgmarin749@gmail.com"
+
 git config --global user.name "Carlos Marin"
 
 
-git commit -m "add workspace folder" - Serve para explicar o que foi feito
+========================================
+3. INICIAR O GIT NO PROJETO
+========================================
 
-git branch -M main - você aqui está criando a linha de desenvolvimento independente chamada main sua brunch.
+git init
 
-git push -u origin main - aqui você está enviando a main para dentro do GitHub
+- Para iniciar o projeto dentro do GitHub.
+
+- Mas na segunda vez não é necessário, pois já criei meu projeto dentro do GitHub.
 
 
-git add . 
+========================================
+4. CONECTAR O PROJETO AO GITHUB
+========================================
+
+git remote add origin [URL HTTPS DO REPOSITÓRIO]
+
+- Use o HTTPS, não SSH por enquanto.
+
+
+========================================
+5. VERIFICAR O STATUS
+========================================
+
+git status
+
+- Para entender o que está acontecendo.
+
+
+========================================
+6. ADICIONAR ARQUIVOS
+========================================
+
+Adicionar todos os arquivos da pasta:
+
+git add .
+
+- Se usar apenas "add .", fará com todos os arquivos da pasta.
+
+
+Adicionar somente uma pasta:
+
+git add ip/
+
+- Exemplo caso fosse para adicionar apenas uma pasta.
+
+
+========================================
+7. CRIAR UM COMMIT
+========================================
+
 git commit -m "descrição"
-git push - aqui é para subir tudo que precisa
+
+- Serve para explicar o que foi feito.
+
+Exemplo:
+
+git commit -m "add workspace folder"
+
+
+========================================
+8. BRANCH
+========================================
+
+git switch
+
+- Para trocar a branch.
+
+
+git branch -M main
+
+- Você aqui está criando a linha de desenvolvimento independente chamada main, sua branch.
+
+
+========================================
+9. ENVIAR PARA O GITHUB
+========================================
+
+Primeiro envio:
+
+git push -u origin main
+
+- Aqui você está enviando a main para dentro do GitHub.
+
+
+Depois, para subir alterações:
+
+git add .
+
+git commit -m "descrição"
+
+git push
+
+- Aqui é para subir tudo que precisa.
+
+
+========================================
+10. CLONAR UM PROJETO DO GITHUB
+========================================
 
 git clone https://github.com/carlosguimarin/ads.git
-para clonar o que está no GitHub
 
-git pull - apenas para quando tem mais de uma branch
-
+- Para clonar o que está no GitHub.
 
 
-Arquivo .gitignore
+========================================
+11. PULL
+========================================
 
-# Ignorar pastas de configuração do Eclipse
-.metadata/
-.recommenders/
-.settings/
-.project
-.classpath
+git pull
 
-# Ignorar pastas de arquivos compilados
-bin/
-
-# Ignorar arquivos de log e temporários
-*.log
-
-
-
-caso já tenha criado o repositório e subido todos os arquivos precisa limpar eles nas suas pastas específicas com os comandos seguintes
-
-
-# Remove a pasta de metadados do Workspace (se estiver nela)
-git rm -r --cached .metadata
-
-# Remove as configurações do Eclipse
-git rm -r --cached .settings
-git rm --cached .project
-git rm --cached .classpath
-
-# Remove a pasta de arquivos compilados
-git rm -r --cached bin
-
-# Remove arquivos de log que possam ter subido
-git rm --cached *.log
+- Apenas para quando tem mais de uma branch.
