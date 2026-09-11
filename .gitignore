@@ -1,0 +1,13 @@
+# Configurações do VS Code
+.vscode/
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.py[cod]
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# Logs
+*.log

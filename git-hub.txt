@@ -1,0 +1,75 @@
+entro na pasta ads
+cd Desktop
+cd ads
+ou
+cd Desktop/ads
+
+git init - para iniciar o projeto dentro do do GitHub
+Mas na seugnda vez não é necessário pois já criei meu projeto dentro do GitHub
+
+git remote add origin e o seu https - use o https não ssh por enquanto
+
+git status para entender o que está acontecendo
+
+git add . - para preparar os arquivos se você usar apenas "add ." fará com todos da pasta
+
+"git add ip/" se fosse para uma só pasta
+
+git switch -  para trocar a branch
+
+Adicionando minhas variáveis no pc para validar meu acesso dentro do GitHub
+git config --global user.email "carlosgmarin749@gmail.com"
+git config --global user.name "Carlos Marin"
+
+
+git commit -m "add workspace folder" - Serve para explicar o que foi feito
+
+git branch -M main - você aqui está criando a linha de desenvolvimento independente chamada main sua brunch.
+
+git push -u origin main - aqui você está enviando a main para dentro do GitHub
+
+
+git add . 
+git commit -m "descrição"
+git push - aqui é para subir tudo que precisa
+
+git clone https://github.com/carlosguimarin/ads.git
+para clonar o que está no GitHub
+
+git pull - apenas para quando tem mais de uma branch
+
+
+
+Arquivo .gitignore
+
+# Ignorar pastas de configuração do Eclipse
+.metadata/
+.recommenders/
+.settings/
+.project
+.classpath
+
+# Ignorar pastas de arquivos compilados
+bin/
+
+# Ignorar arquivos de log e temporários
+*.log
+
+
+
+caso já tenha criado o repositório e subido todos os arquivos precisa limpar eles nas suas pastas específicas com os comandos seguintes
+
+
+# Remove a pasta de metadados do Workspace (se estiver nela)
+git rm -r --cached .metadata
+
+# Remove as configurações do Eclipse
+git rm -r --cached .settings
+git rm --cached .project
+git rm --cached .classpath
+
+# Remove a pasta de arquivos compilados
+git rm -r --cached bin
+
+# Remove arquivos de log que possam ter subido
+git rm --cached *.log
